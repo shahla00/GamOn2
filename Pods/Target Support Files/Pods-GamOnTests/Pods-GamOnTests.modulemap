@@ -1,6 +1,0 @@
-framework module Pods_GamOnTests {
-  umbrella header "Pods-GamOnTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
