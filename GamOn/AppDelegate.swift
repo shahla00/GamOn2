@@ -1,73 +1,55 @@
 //
-//  AppDelegate.swift
+//  Utilities.swift
 //  GamOn
 //
-//  Created by Shahla Almasri Hafez on 2/18/18.
+//  Created by Katie on 27/03/17.
+//  Copyright © 2017 amesKatie. All rights reserved.
 //
 
 import UIKit
-import Contacts
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    static var contacts = [CNContact]()
 
-    lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "RecentPlayers")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error {
-                
-                print("Unresolved error, \((error as NSError).userInfo)")
-            }
-        })
-        return container
-    }()
+    static var contacts = [Player]()
+    static var favorites = [Player]()
+    static var recents = [Player]()
     
     ///
-    /// Saves the list of recent players to the database
+    /// Returns the index of the contact in the favorites list
     ///
-    func saveRecentPlayers(recentList: inout [CNContact]) {
-        // Make sure the list does not grow beyound 10 entries
-        if recentList.count > 10 {
-            recentList.remove(at: 10)
+    static func indexInFavorite(identifier: String) -> Int {
+        
+        var found = false
+        var index = -1
+        
+        while !found && index < AppDelegate.favorites.count - 1 {
+            index += 1
+            if AppDelegate.favorites[index].identifier == identifier {
+                found = true
+            }
         }
         
-        let context = persistentContainer.viewContext
-        let entity = NSEntityDescription.insertNewObject(forEntityName: "Players", into: context)
-        entity.setValue(recentList, forKey: "recentPlayers")
-        do {
-            try context.save()
-        } catch {
-            print("Failed saving recent players")
-        }
-    }
-    
-    ///
-    /// Loads the list of recent players from the database
-    ///
-    func loadRecentPlayers() -> [CNContact] {
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Players")
-        request.returnsObjectsAsFaults = false
-        do {
-            let result = try persistentContainer.viewContext.fetch(request)
-            if let result = result as? [NSManagedObject], result.count == 1 {
-                return result[0].value(forKey: "recentPlayers") as! [CNContact]
-            } else {
-                print("No recent players")
-            }
-        } catch {
-            print("Failed loading recent players")
+        if found {
+            return index
         }
         
-        return []
+        return -1
     }
 
+    ///
+    ///
+    ///
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        application.statusBarStyle = .lightContent
+        // Use Firebase library to configure APIs
+        FirebaseApp.configure()
         return true
     }
 
@@ -92,7 +74,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
-
