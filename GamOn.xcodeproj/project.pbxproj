@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3B4C16DD1E87A1DC00BB2455 /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C16DC1E87A1DC00BB2455 /* Games.swift */; };
 		3B4E53811E83733F00D74ED4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4E53801E83733F00D74ED4 /* AppDelegate.swift */; };
-		4F345C91650195A162FBF91E /* Pods_GamOn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC9C050BB55628E04B3688F /* Pods_GamOn.framework */; };
 		C1145ED6203FD1D5001435E9 /* GamOnModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1145ED4203FD1D5001435E9 /* GamOnModel.xcdatamodeld */; };
 		C123ADB6203E41AE00A2E969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C123ADB5203E41AE00A2E969 /* Main.storyboard */; };
 		C123ADB9203E41BF00A2E969 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C123ADB7203E41BF00A2E969 /* GameCell.swift */; };
@@ -31,10 +30,6 @@
 		3B4E537D1E83733F00D74ED4 /* GamOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4E53801E83733F00D74ED4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B4E538C1E83733F00D74ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D39B5DCFFA959B975B068EC /* Pods-GamOnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamOnTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GamOnTests/Pods-GamOnTests.release.xcconfig"; sourceTree = "<group>"; };
-		7658A994C0C3F301176937F1 /* Pods_GamOnUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GamOnUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9835046E015E1B6B5A7D30C8 /* Pods-GamOnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamOnTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GamOnTests/Pods-GamOnTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BCC9C050BB55628E04B3688F /* Pods_GamOn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GamOn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1145ED5203FD1D5001435E9 /* GamOnModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GamOnModel.xcdatamodel; sourceTree = "<group>"; };
 		C123ADB5203E41AE00A2E969 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C123ADB7203E41BF00A2E969 /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
@@ -47,13 +42,8 @@
 		C123ADC8203E4A7A00A2E969 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		C123ADCA203E505400A2E969 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C123ADCC203FAFE800A2E969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = GamOn/Assets.xcassets; sourceTree = "<group>"; };
-		C19620B3ADD137A9E605B5E2 /* Pods_GamOnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GamOnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E68572204320D000FBB33E /* PlayersManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersManagedObject.swift; sourceTree = "<group>"; };
 		C1F17B49204E1E64007A07CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		DC8FFE581870FB99B310F0B1 /* Pods-GamOnUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamOnUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GamOnUITests/Pods-GamOnUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E9AA927CB6D1DCCB0BA6751B /* Pods-GamOn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamOn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GamOn/Pods-GamOn.debug.xcconfig"; sourceTree = "<group>"; };
-		F0B2088877C4E2450A5AB81E /* Pods-GamOn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamOn.release.xcconfig"; path = "Pods/Target Support Files/Pods-GamOn/Pods-GamOn.release.xcconfig"; sourceTree = "<group>"; };
-		F3D8F15E607DFB9FF1D671A6 /* Pods-GamOnUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamOnUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GamOnUITests/Pods-GamOnUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F345C91650195A162FBF91E /* Pods_GamOn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +95,6 @@
 				C1145ED4203FD1D5001435E9 /* GamOnModel.xcdatamodeld */,
 				3B4E537F1E83733F00D74ED4 /* GamOn */,
 				3B4E537E1E83733F00D74ED4 /* Products */,
-				E205DEC1CA8059C768DF9CAA /* Pods */,
-				5DE5EEAC096B74AC9BD81A9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,35 +121,12 @@
 			path = GamOn;
 			sourceTree = "<group>";
 		};
-		5DE5EEAC096B74AC9BD81A9C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BCC9C050BB55628E04B3688F /* Pods_GamOn.framework */,
-				C19620B3ADD137A9E605B5E2 /* Pods_GamOnTests.framework */,
-				7658A994C0C3F301176937F1 /* Pods_GamOnUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C123ADC1203E43AC00A2E969 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				C123ADC2203E43B800A2E969 /* UIColor.swift */,
 			);
 			name = Extensions;
-			sourceTree = "<group>";
-		};
-		E205DEC1CA8059C768DF9CAA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E9AA927CB6D1DCCB0BA6751B /* Pods-GamOn.debug.xcconfig */,
-				F0B2088877C4E2450A5AB81E /* Pods-GamOn.release.xcconfig */,
-				9835046E015E1B6B5A7D30C8 /* Pods-GamOnTests.debug.xcconfig */,
-				4D39B5DCFFA959B975B068EC /* Pods-GamOnTests.release.xcconfig */,
-				DC8FFE581870FB99B310F0B1 /* Pods-GamOnUITests.debug.xcconfig */,
-				F3D8F15E607DFB9FF1D671A6 /* Pods-GamOnUITests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,12 +136,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B4E53A51E83733F00D74ED4 /* Build configuration list for PBXNativeTarget "GamOn" */;
 			buildPhases = (
-				998EF30B6BAEB33064AF0969 /* [CP] Check Pods Manifest.lock */,
 				3B4E53791E83733F00D74ED4 /* Sources */,
 				3B4E537A1E83733F00D74ED4 /* Frameworks */,
 				3B4E537B1E83733F00D74ED4 /* Resources */,
-				2784CFA9FC0AB3528AC2520F /* [CP] Embed Pods Frameworks */,
-				88CE224A8937DC1E2FE85D31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,57 +198,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2784CFA9FC0AB3528AC2520F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GamOn/Pods-GamOn-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		88CE224A8937DC1E2FE85D31 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GamOn/Pods-GamOn-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		998EF30B6BAEB33064AF0969 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GamOn-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B4E53791E83733F00D74ED4 /* Sources */ = {
@@ -420,7 +330,6 @@
 		};
 		3B4E53A61E83733F00D74ED4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9AA927CB6D1DCCB0BA6751B /* Pods-GamOn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = USYKKPJ4F6;
@@ -434,7 +343,6 @@
 		};
 		3B4E53A71E83733F00D74ED4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0B2088877C4E2450A5AB81E /* Pods-GamOn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = USYKKPJ4F6;
