@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Fingo.xcodeproj">
+      location = "group:../../Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "self:MyMed.xcodeproj">
    </FileRef>
 </Workspace>

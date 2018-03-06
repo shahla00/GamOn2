@@ -1,6 +1,0 @@
-framework module Pods_GamOn {
-  umbrella header "Pods-GamOn-umbrella.h"
-
-  export *
-  module * { export * }
-}

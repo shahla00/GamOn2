@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         application.statusBarStyle = .lightContent
         // Use Firebase library to configure APIs
-        FirebaseApp.configure()
+        FIRApp.configure()
         return true
     }
 

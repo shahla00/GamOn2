@@ -9,8 +9,8 @@
 import Firebase
 
 class Games {
-    private var _ref: DatabaseReference?
-    private var  _dataBaseHandle: DatabaseHandle?
+    private var _ref: FIRDatabaseReference?
+    private var  _dataBaseHandle: FIRDatabaseHandle?
     
     private var _textArray = [String]()
     private var _catArray = [String]()
@@ -23,9 +23,9 @@ class Games {
     ///
     ///
     func requestGamesText(category:String, completed:@escaping () -> ()) {
-        _ref = Database.database().reference()
+        _ref = FIRDatabase.database().reference()
     
-        _ref?.observe(DataEventType.value, with: { [weak self] (snapshot) in
+        _ref?.observe(FIRDataEventType.value, with: { [weak self] (snapshot) in
             self?.clearTextArray()
             if let dict = snapshot.value as? Dictionary<String,AnyObject> {
                 self?._textArray = []
@@ -43,8 +43,8 @@ class Games {
                         print(unicorn)
                     }
                     
-                    print(self?._textArray ?? "")
-                    print(self?._textArray.count ?? "")
+                    print(self?._textArray)
+                    print(self?._textArray.count)
                     
                     completed()
                 }
@@ -56,15 +56,15 @@ class Games {
     ///
     ///
     func requestCategories(completed:@escaping () -> ()) {
-        _ref = Database.database().reference()
+        _ref = FIRDatabase.database().reference()
         
-        _ref?.observe(DataEventType.value, with: { [weak self] (snapshot) in
+        _ref?.observe(FIRDataEventType.value, with: { [weak self] (snapshot) in
             self?.clearCatArray()
            
             for group in snapshot.children {
                 self?._catArray.append((group as AnyObject).key)
             }
-            print(self?._catArray ?? "")
+            print(self?._catArray)
                     completed()
         })
     }

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B4E537C1E83733F00D74ED4"
+               BlueprintIdentifier = "C1FBDDAC204C43BA00D2D0DB"
                BuildableName = "GamOn.app"
                BlueprintName = "GamOn"
                ReferencedContainer = "container:GamOn.xcodeproj">
@@ -29,31 +29,11 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B4E53901E83733F00D74ED4"
-               BuildableName = "GamOnTests.xctest"
-               BlueprintName = "GamOnTests"
-               ReferencedContainer = "container:GamOn.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B4E539B1E83733F00D74ED4"
-               BuildableName = "GamOnUITests.xctest"
-               BlueprintName = "GamOnUITests"
-               ReferencedContainer = "container:GamOn.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B4E537C1E83733F00D74ED4"
+            BlueprintIdentifier = "C1FBDDAC204C43BA00D2D0DB"
             BuildableName = "GamOn.app"
             BlueprintName = "GamOn"
             ReferencedContainer = "container:GamOn.xcodeproj">
@@ -77,7 +57,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B4E537C1E83733F00D74ED4"
+            BlueprintIdentifier = "C1FBDDAC204C43BA00D2D0DB"
             BuildableName = "GamOn.app"
             BlueprintName = "GamOn"
             ReferencedContainer = "container:GamOn.xcodeproj">
@@ -96,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B4E537C1E83733F00D74ED4"
+            BlueprintIdentifier = "C1FBDDAC204C43BA00D2D0DB"
             BuildableName = "GamOn.app"
             BlueprintName = "GamOn"
             ReferencedContainer = "container:GamOn.xcodeproj">

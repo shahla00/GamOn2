@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_GamOnVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_GamOnVersionString[];
+FOUNDATION_EXPORT double Pods_MyMedVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_MyMedVersionString[];
 
